@@ -27,10 +27,9 @@
     healthCheckPath: /api/health
 
   # Frontend Static Site
-  - type: web
+  - type: static_site
     name: blog-frontend
     env: static
-    plan: starter
     buildCommand: cd client && npm install && npm run build
     staticPublishPath: ./client/dist
     envVars:
