@@ -30,7 +30,7 @@
   - type: web
     name: blog-frontend
     env: static
-    plan: free
+    plan: starter
     buildCommand: cd client && npm install && npm run build
     staticPublishPath: ./client/dist
     envVars:
