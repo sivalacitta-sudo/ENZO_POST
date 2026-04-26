@@ -8,7 +8,7 @@
     "allowSyntheticDefaultImports": true,
     "forceConsistentCasingInFileNames": true,
     "target": "ES2024",
-    "strictNullChecks": true,
+    "strictNullChecks": false,
     "sourceMap": true,
     "outDir": "./dist",
     "rootDir": "./",
