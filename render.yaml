@@ -15,9 +15,7 @@
       - key: DB_TYPE
         value: postgres
       - key: DATABASE_URL
-        fromDatabase:
-          name: blog-db
-          property: connectionString
+        sync: false
       - key: JWT_SECRET
         generateValue: true
       - key: JWT_EXPIRES_IN
@@ -25,10 +23,3 @@
       - key: FRONTEND_URL
         sync: false
     healthCheckPath: /api/health
-
-databases:
-  - name: blog-db
-    databaseName: blog_cms
-    user: blog_user
-    plan: free
-    region: oregon
