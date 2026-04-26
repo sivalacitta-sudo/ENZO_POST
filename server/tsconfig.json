@@ -1,4 +1,4 @@
-{
+﻿{
   "compilerOptions": {
     "module": "commonjs",
     "declaration": true,
@@ -9,10 +9,10 @@
     "forceConsistentCasingInFileNames": true,
     "target": "ES2024",
     "strictNullChecks": false,
+    "noImplicitAny": false,
     "sourceMap": true,
     "outDir": "./dist",
     "rootDir": "./",
-    "ignoreDeprecations": "6.0",
     "skipLibCheck": true,
     "incremental": true
   }
