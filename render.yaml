@@ -26,19 +26,6 @@
         sync: false
     healthCheckPath: /api/health
 
-  # Frontend Static Site
-  - type: staticSite
-    name: blog-frontend
-    buildCommand: cd client && npm install && npm run build
-    publishPath: ./client/dist
-    envVars:
-      - key: VITE_API_URL
-        sync: false
-    routes:
-      - type: rewrite
-        source: /*
-        destination: /index.html
-
 databases:
   - name: blog-db
     databaseName: blog_cms
