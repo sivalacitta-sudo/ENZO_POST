@@ -27,11 +27,10 @@
     healthCheckPath: /api/health
 
   # Frontend Static Site
-  - type: static_site
+  - type: staticSite
     name: blog-frontend
-    env: static
     buildCommand: cd client && npm install && npm run build
-    staticPublishPath: ./client/dist
+    publishPath: ./client/dist
     envVars:
       - key: VITE_API_URL
         sync: false
